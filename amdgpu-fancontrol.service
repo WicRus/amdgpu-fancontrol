@@ -5,5 +5,8 @@ Description=amdgpu-fancontrol
 Type=simple
 ExecStart=/usr/bin/amdgpu-fancontrol
 
+Restart=on-failure
+RestartSec=5s
+
 [Install]
 WantedBy=multi-user.target
